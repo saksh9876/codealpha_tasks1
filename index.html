@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🌍 Language Translator</h2>
+
+    <textarea id="inputText" placeholder="Enter text"></textarea>
+
+    <div class="controls">
+        <select id="sourceLang">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="fr">French</option>
+        </select>
+
+        <select id="targetLang">
+            <option value="hi">Hindi</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+        </select>
+    </div>
+
+    <button onclick="translateText()">Translate</button>
+
+    <textarea id="outputText" placeholder="Translated text" readonly></textarea>
+
+    <button onclick="copyText()">Copy</button>
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
